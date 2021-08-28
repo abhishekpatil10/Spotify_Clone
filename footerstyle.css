@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hahmlet', serif;
+}
+
+.foot{
+    background-color: black;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;    
+
+}
+
+
+
+.footer h1{
+    font-weight: bold;
+    /* color: #1ed760; */
+    
+}
+
+.footer h1:hover{
+    color: #1ed760;
+    cursor: pointer;
+}
+.footer h1 i{
+    font-size: 40px;
+}
+
+
+
+.mid_link ul{
+    display:block ;
+    justify-content: space-around;
+    list-style: none;
+}
+
+.mid_link ul li{
+    margin:1em;
+    font-size: 20px;
+    
+}
+
+.mid_link ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.mid_link ul li a:hover{
+    color: #1ed760;
+}
+
+.footer .right{
+    background: #1ed760;
+}
+.right h3 i{
+    font-size: 25px;
+    margin: 1em;
+    padding: 15px;
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.0px );
+    -webkit-backdrop-filter: blur( 4.0px );
+    border-radius: 50px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+   
+}
+
+.right h3 i:hover{
+    color: black;
+    cursor: pointer;
+    background-color: rgb(41, 65, 171);
+  
+}
+
+@media screen and (max-width:400px) {
+ 
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 1em;
+    }
+    .footer .mid_link{
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2em;
+    }
+    .footer .right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+.foot .foot-link{
+    margin-top: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.foot-link .links{
+    color: white;
+    display: flex;
+    justify-content: space-around;
+}
+
+.links h5{
+    margin: 1em;
+}
+
+.links h5:hover{
+    cursor: pointer;
+    color: #1ed760;
+}
+
+
+@media screen and (max-width:870px) {
+    .foot-link .links{
+        display: none;
+    }
+}

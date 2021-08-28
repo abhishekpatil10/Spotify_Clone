@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hahmlet', serif;
+}
+
+
+.home{
+  background-color: rgb(41, 65, 171);
+  background-image: url(https://www-growth.scdn.co/static/home/bursts-mobile.svg);
+  background-position: center top 25%;
+  background-repeat: no-repeat;
+  background-size: 195%;
+  /* background-position: center bottom 35%; */
+  height: 100vh;
+  padding: 1em;
+
+}
+.home h1{
+  color: #1ed760;
+  font-size: 100px;
+  margin: 1em;
+  margin-bottom: 0;
+  text-align: center;
+  }
+
+.home h2{
+  text-align: center;
+  font-size: 90px;
+  padding-left: 5em;
+  color: #1ed760;
+}
+
+
+.home h3{
+  text-align: center;
+  margin: 2em;
+  color: #1ed760;
+}
+
+
+.home h4{
+  width: fit-content;
+  margin:3.5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+
+}
+
+.home h4 a{
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  background-color: #1ed760;
+  padding: 1em;
+  border-radius: 50px;
+}
+
+.home h4 a:hover{
+  background-color: transparent;
+  border: 2px solid #1ed760;
+}
+
+
+@media screen and (max-width:1000px) {
+  .home h1,.home h2{
+    font-size: 60px;
+    padding-left: 1em;
+  }
+}
+
+@media screen and (max-width:775px) {
+  .home{
+    height: 70vh;
+  }
+  .home h1,.home h2{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width:515px) {
+  .home{
+    height: 70vh;
+  }
+  .home h1,.home h2{
+    font-size: 35px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .home h3,.home h4{
+    font-size: small;
+  }
+}
+
+@media screen and (max-width:355px) {
+  .home{
+    height: 60vh;
+  }
+  .home h1,.home h2{
+    font-size: 30px;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  .home h3,.home h4{
+    font-size: small;
+  }
+}

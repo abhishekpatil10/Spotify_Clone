@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hahmlet', serif;
+}
+
+.header{
+    background: black;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    padding: 1em;
+  
+}
+
+.header h1{
+   
+    font-weight: bold;
+    /* color: #1ed760; */
+}
+
+.header h1 a{
+    text-decoration: none;
+    color: white;
+}
+.header h1 a:hover{
+    color: #1ed760;
+}
+.header h1 i{
+    font-size: 40px;
+}
+
+.header h1:hover{
+    color: #1ed760;
+    cursor: pointer;
+}
+.header .link {
+    list-style: none;
+}
+.header #bars{
+    font-size: 20px;
+    display: none;
+}
+
+.header #bars:hover{
+    cursor: pointer;
+}
+.link ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.link ul li a{
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    display: block;
+    font-weight: bold;
+}
+.link ul li a:hover{
+    
+    color: #1ed760;
+}
+
+
+
+@media screen and (max-width:875px) {
+    .header {
+   display: grid;
+   grid-template-columns: auto auto;
+   align-items: center;
+   justify-content: space-between;
+    }
+    .header #bars{
+        display: block;
+    }
+.header span{
+    display: none;
+}
+
+
+    .header .link ul{
+        display: flex;
+    flex-direction:column;
+    display: none;
+    margin-top: 1em;
+}
+
+.header .link ul li{
+    /* background-color: red; */
+    width: 100%;
+    /* margin-top: 0.em; */
+}
+}
+

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+ <script>
+     $(document).ready(function(){
+         $("#header").load("header.html");
+         $("#footer").load("footer.html");
+     });
+ </script>
+ <style>
+     @import url('https://fonts.googleapis.com/css2?family=Hahmlet&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hahmlet', serif;
+}
+
+
+     body{
+    background-color: rgb(41, 65, 171);
+    background-image: url(https://www-growth.scdn.co/static/home/bursts-mobile.svg);
+    background-position: center top 25%;
+    background-repeat: no-repeat;
+    background-size: 195%;
+    /* background-position: center bottom 35%; */
+    height: 100vh;
+   
+     }
+     #login_form{
+         /* background-color: royalblue; */
+         padding:2em  1em;
+         display: block;
+         justify-content: center;
+         align-items: center;
+      
+     }
+     #form{
+        background: rgba( 255, 255, 255, 0.05 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4.0px );
+-webkit-backdrop-filter: blur( 4.0px );
+border-radius: 10px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+         border: 1px solid #1ed760;
+         width: 350px;
+         margin-left: auto;
+         margin-right: auto;
+     }
+     #form form{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     form h2{
+         margin: 1em;
+         font-size: 30px;
+         color: white;
+     }
+
+     form input{
+         padding: 1em;
+         margin: 1em;
+         width: 250px;
+         outline: none;
+         border: none;
+         border-radius: 10px;
+         font-size: 18px;
+     }
+   
+     form button {
+         padding: 0.8em 2em;
+         margin: 1em;
+         border-radius: 10px;
+         background-color: #1ed760;
+         border: none;
+         font-size: 18px;
+         outline: none;
+         font-weight: bold;
+     }
+     form button:hover{
+         border: 2px solid #1ed760;
+         cursor: pointer;
+     }
+
+     #login_form p{
+        text-align: center;
+        font-size: 25px;
+        text-decoration: none;
+        background-color: #1ed760;
+        color: white;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom:1em;
+        border-radius: 10px;
+    
+    }
+
+    #login_form p a{
+        color: white;
+       margin: 1em;
+        text-decoration: none;
+ 
+    }
+     @media screen and (max-width:450px) {
+         #login_form{
+             padding: 1em;
+         }
+         #form{
+             width: auto;
+         }
+         form{
+             width: auto;
+             justify-content: center;
+             align-items: center;
+             margin: 0;
+             padding: 0;
+         }
+         form input{
+             width:230px;
+             margin-left: auto;
+             margin-right: auto;
+         }
+     }
+ </style>
+</head>
+<body>
+
+<div id="header"></div>
+    <section id="login_form">
+  <div id="form">
+      <form>
+      <h2>Login Form</h2>
+        <input type="text" placeholder="username" id="user" required>
+        <input type="text" placeholder="password" id="pass" required>
+        <button onclick="login()" type="button">Login</button>
+        <p id="home_link"></p>
+        </form>
+</div>
+   </section>
+
+   
+   <div id="footer"></div>
+
+
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase.js"></script>
+
+   <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+   <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-analytics.js"></script>
+   <!-- <script src="firebase.js"></script> -->
+   
+    <script>
+
+        function login(){
+        var a = "admin";
+        var b= "admin";
+
+        var c = document.getElementById("user").value;
+        var d = document.getElementById("pass").value;
+// console.log(c,d);
+
+        if (a==c && b==d){
+            var e = document.getElementById("home_link").innerHTML = "<a href='music_home.html'>Go TO Website</a>";
+            document.getElementById("home_link").innerHTML = e;
+        }
+        else{
+            alert("invalid credentials");
+          
+        }}
+        
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+   
+<!-- <script>
+        $(document).ready(function(){
+            $("#bars").click(function(){
+                $('#form_buttons').slideToggle();
+                
+            });
+        });
+
+        $(document).ready(function(){
+            $('#login').click(function(){
+                $('#login_form').toggle();
+            });
+        });
+    </script> -->
+
+   
+</body>
+</html>

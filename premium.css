@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hahmlet', serif;
+}
+
+
+.body .content {
+    background-color: #1d75de;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding-top: 9em;
+    padding-left: 7em;
+color: white;
+}
+
+.content h3{
+    font-size: 40px;
+   padding-bottom: 0.5em;
+}
+.content h4{
+    font-size: 30px;
+    padding: 2em; 
+    padding-top: 0;
+    padding-bottom: 0.5em;
+}
+
+.content .btns{
+    display: flex;
+    align-items: center;
+    margin: 2em;
+    margin-left: 5em;
+}
+
+.btns h5 a{
+    margin: 1em;
+    background-color: transparent;
+    border: 2px solid white;
+    padding: 1em 2em;
+    border-radius: 50px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btns #first a{
+    background-color: black;
+}
+.btns #first a:hover{
+    background-color: transparent;
+}
+.btns h5 a:hover{
+    background:black;
+}
+.content h6{
+    font-size: 12px;
+    padding-bottom: 8em;
+    padding-top:1.5em;
+    padding-left: 1em;
+}
+
+
+.why-go{
+    padding: 1em;
+}
+.why-go h3{
+    text-align: center;
+    font-size: 35px;
+
+}
+
+.why-go .card{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    margin: 2em;
+    margin-bottom: 5em;
+}
+
+.card img{
+    width: 12em;
+}
+
+.card h4{
+    font-size: 20px;
+    margin: 1em;
+}
+.card h5{
+    font-size: 15px;
+}
+
+
+
+@media screen and (max-width:1000px) {
+    .why-go .card{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+}
+
+
+@media screen and (max-width:750px) {
+    .body .content{
+        padding-left: 0;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:630px) {
+    .body .content h3{
+        font-size: 30px;
+    }
+    .body .content h4{
+        font-size: 20px;
+    }
+    .body .content h6{
+        padding-left: 0;
+    }
+}
+
+
+@media screen and (max-width:560px) {
+    .body .content .btns{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    .btns #first{
+        margin-bottom: 4em;
+    }
+
+    .why-go .card{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        align-items: center;
+    }
+}
