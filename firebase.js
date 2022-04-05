@@ -1,11 +1,11 @@
 var firebaseConfig = {
-    apiKey: "AIzaSyCqS4pJxlSZNM0GJk2hV1Gy9kSn2wD9P9c",
-    authDomain: "test-b659b.firebaseapp.com",
-    projectId: "test-b659b",
-    storageBucket: "test-b659b.appspot.com",
-    messagingSenderId: "1077388257904",
-    appId: "1:1077388257904:web:c34284fc66903cccdee2b5",
-    measurementId: "G-GHF9VZL635"
+    apiKey: "#",
+    authDomain: "#",
+    projectId: "#",
+    storageBucket: "#",
+    messagingSenderId: "#",
+    appId: "#",
+    measurementId: #"
   };
 
   // Initialize Firebase
